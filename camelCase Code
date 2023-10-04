@@ -1,0 +1,12 @@
+public static int camelcase(String s) {
+        int words = 1;
+        
+        for (int i = 1; i < s.length(); i++) {
+            String c = s.substring(i-1, i);
+            if (c == c.toUpperCase()) {
+                words++;
+            }
+        }
+        
+        return words;
+    }
